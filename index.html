@@ -77,7 +77,7 @@
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
-            <span>Web Designing</span>
+            <span>Responsive Web Design</span>
             <span>Typing</span>
         </div>
     </section>
@@ -146,7 +146,7 @@
     <div class="declaration">
         <div>
             <p><strong>Place:</strong> Alappuzha, Kerala</p>
-            <p><strong>Date:</strong> __ / __ / 2026</p>
+            <p><strong>Date:</strong> <span id="date"></span></p>
         </div>
 
         <div class="signature">
@@ -160,6 +160,10 @@
     </footer>
 
 </div>
-
+<script>
+    const today = new Date();
+    const formatted = today.toLocaleDateString('en-GB');
+    document.getElementById("date").innerText = formatted;
+</script>
 </body>
-</html>   change in ths code ,also adsd aadate
+</html> 
