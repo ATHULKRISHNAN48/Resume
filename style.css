@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#eef2f7;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1000px;
+    margin:30px auto;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+header{
+    background:#0a3d62;
+    color:white;
+    padding:40px;
+}
+
+.header-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.profile-pic{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+.header-text h1{
+    font-size:2.4rem;
+}
+
+.header-text h3{
+    margin:8px 0;
+    font-weight:400;
+}
+
+section{
+    padding:25px 40px;
+}
+
+section h2{
+    color:#0a3d62;
+    margin-bottom:15px;
+    border-bottom:3px solid #0a3d62;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.card{
+    background:#f7f9fc;
+    padding:15px;
+    border-left:5px solid #0a3d62;
+    margin-bottom:15px;
+    border-radius:8px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skills span{
+    background:#0a3d62;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+footer{
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        margin:10px;
+    }
+
+    header{
+        padding:25px;
+    }
+
+    .header-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-pic{
+        width:130px;
+        height:130px;
+    }
+
+    .header-text h1{
+        font-size:2rem;
+    }
+
+    section{
+        padding:20px;
+    }
+}
