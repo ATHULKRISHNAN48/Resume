@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
+    font-family:Arial, sans-serif;
     background:#eef2f7;
     color:#333;
     line-height:1.6;
@@ -14,10 +14,10 @@ body{
 .container{
     max-width:1000px;
     margin:30px auto;
-    background:#fff;
-    border-radius:15px;
+    background:white;
+    border-radius:12px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 header{
@@ -35,20 +35,15 @@ header{
 }
 
 .profile-pic{
-    width:160px;
-    height:160px;
+    width:150px;
+    height:150px;
     border-radius:50%;
     object-fit:cover;
     border:5px solid white;
 }
 
-.header-text h1{
-    font-size:2.4rem;
-}
-
-.header-text h3{
-    margin:8px 0;
-    font-weight:400;
+.header-text{
+    text-align:center;
 }
 
 section{
@@ -60,7 +55,6 @@ section h2{
     margin-bottom:15px;
     border-bottom:3px solid #0a3d62;
     display:inline-block;
-    padding-bottom:5px;
 }
 
 .card{
@@ -90,7 +84,18 @@ li{
     color:white;
     padding:8px 15px;
     border-radius:20px;
-    font-size:14px;
+}
+
+.declaration{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.signature{
+    text-align:right;
+    margin-top:20px;
 }
 
 footer{
@@ -102,26 +107,16 @@ footer{
 
 @media(max-width:768px){
 
-    .container{
-        margin:10px;
-    }
-
-    header{
-        padding:25px;
-    }
-
     .header-content{
         flex-direction:column;
-        text-align:center;
     }
 
-    .profile-pic{
-        width:130px;
-        height:130px;
+    .declaration{
+        flex-direction:column;
     }
 
-    .header-text h1{
-        font-size:2rem;
+    .signature{
+        text-align:left;
     }
 
     section{
