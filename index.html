@@ -208,7 +208,7 @@
 
                 <div>
                     <p><strong>Place:</strong> Alappuzha</p>
-                    <p><strong>Date:</strong> __________</p>
+                    <p><strong>Date:</strong> <span id="date"></span></p>
                 </div>
 
                 <div class="signature">
@@ -233,37 +233,55 @@
 
         <!-- TECHNICAL SKILLS -->
 
-        <div class="sidebar-section">
+       <div class="sidebar-section">
+    <h3 class="sidebar-title">
+        <i class="fa-solid fa-code"></i> Technical Skills
+    </h3>
 
-            <h3 class="sidebar-title">
-                Technical Skills
-            </h3>
-
-            <div class="skill-bar-container">
-                <div class="skill-label">HTML</div>
-            </div>
-
-            <div class="skill-bar-container">
-                <div class="skill-label">CSS</div>
-            </div>
-
-            <div class="skill-bar-container">
-                <div class="skill-label">JavaScript</div>
-            </div>
-
-            <div class="skill-bar-container">
-                <div class="skill-label">Git & GitHub</div>
-            </div>
-
-            <div class="skill-bar-container">
-                <div class="skill-label">Web Development</div>
-            </div>
-
-            <div class="skill-bar-container">
-                <div class="skill-label">Typing</div>
-            </div>
-
+    <div class="skill-bar-container">
+        <div class="skill-label">HTML / CSS</div>
+        <div class="bar-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
         </div>
+    </div>
+
+    <div class="skill-bar-container">
+        <div class="skill-label">JavaScript</div>
+        <div class="bar-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div class="skill-bar-container">
+        <div class="skill-label">Git & GitHub</div>
+        <div class="bar-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div class="skill-bar-container">
+        <div class="skill-label">Typing</div>
+        <div class="bar-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+        </div>
+    </div>
+</div>
 
         <!-- SOFT SKILLS -->
 
@@ -313,20 +331,30 @@
         </div>
 
         <!-- LANGUAGES -->
+<div class="sidebar-section">
+    <h3 class="sidebar-title">
+        <i class="fa-solid fa-language"></i> Languages
+    </h3>
 
-        <div class="sidebar-section">
+    <div class="languages-container">
 
-            <h3 class="sidebar-title">
-                Languages
-            </h3>
-
-            <ul class="sidebar-list">
-                <li>Malayalam</li>
-                <li>English</li>
-                <li>Hindi</li>
-            </ul>
-
+        <div class="lang-chart">
+            <div class="circle percent-100"></div>
+            <span>Malayalam</span>
         </div>
+
+        <div class="lang-chart">
+            <div class="circle percent-100"></div>
+            <span>English</span>
+        </div>
+
+        <div class="lang-chart">
+            <div class="circle percent-70"></div>
+            <span>Hindi</span>
+        </div>
+
+    </div>
+</div>
 
         <!-- ACHIEVEMENTS -->
 
@@ -349,5 +377,15 @@
 
 </div>
 
+<script>
+const today = new Date();
+
+document.getElementById("date").innerHTML =
+today.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+});
+</script>
 </body>
 </html>
